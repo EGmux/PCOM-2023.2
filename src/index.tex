@@ -8,7 +8,7 @@ com um apanhado contrastando o uso de cada uma.
 \subsection{NRZ - Não Retorno ao Zero}
 
 Porque o nomo NRZ, o que significa não retornar a zero? Veja a imagem abaixo para tentar associar a explicação ao resultado real.
-
+\\\\
 \includegraphics[width=0.6\textwidth]{../assets/nrz.png}\cite{dc}
 
 Bem o não retorno ao zero está no fato que o sinal elétrico de saída, o resultado da codificação, oscila sempre entre nos limites do conjunto [ +V,-V ] consequentemente nunca o bit0/1 assume o valor
@@ -24,9 +24,9 @@ não é afetada pelo valor do bit anterior, não existe memória na codificaçã
 
 \textbf{M/S} (mark/space) (do inglês marca/espaço): nessas subdivisões existe um nível lógico que alterna e outro que fica fixo e nível de tensão igual ao do que alterou, logo um nível lógico
 marca a tensão usada pelo outro, efetivamente, no caso \textbf{M} é para o caso que o bit 1 é o que marca e \textbf{S} é o caso que o bit 0 é marcado.
-
+\\\\
 \includegraphics[width=0.6\textwidth]{../assets/nrzm.png}\cite{dc}
-
+\\\\
 \textbf{OBS:}Note que o 1 é o nível lógico que se altera nesse caso.
 
 \textbf{OBS2:}Note que a imposição de um nível lógico ser alterado se da pelo fato que se não alterasse seria impossível distinguir os níveis lógicos visto a regra de codificação
@@ -35,18 +35,18 @@ mencionada previamente.
 \subsection{RZ - Retorno ao zero}
 
 O detalhe aqui é perceber que o nível lógico, indepedente da subdivisão, \textit{sempre retorna para o 0 por metade do intervalo de codificação de um bit}.
-
+\\\\
 \includegraphics[width=0.6\textwidth]{../assets/rz.png}\cite{dc}
-
+\\\\
 
 \subsubsection{As possíveis subdivisões, ao que você deve estar atento?}
 
 \textbf{Polar}: a distinção é clara, os níveis lógicos no final do período de transição são necessariamente +V ou -V, muito parecido com o NRZ-L, mas note que há esse retorno ao
 zero que da o nome a essa família de esquemas.
 \\
-\\
+\\\\
 \includegraphics[width=0.6\textwidth]{../assets/polar-rz.png}\cite{dc}
-\\
+\\\\
 \textbf{OBS:} Nesse caso é convenção que o bit 1 seja codificado por tensão positiva e o bit 0 negativa.
 \\
 
@@ -55,8 +55,9 @@ zero que da o nome a essa família de esquemas.
 o ponto é que a codificaçao é curiosa visto que o bit 1 pode ser codificado tanto como +V e -V é típico ter problemas de sincronismo com esse esquema se vários zeros
 forem enviados em sequência.
 \\
-
+\\\\
 \includegraphics[width=0.6\textwidth]{../assets/ami.png}\cite{dc}
+\\\\
 
 \subsection{Bifase}
 
@@ -71,8 +72,9 @@ Aqui que a imaginação precisa ser um pouco maior, os níveis deixaram de ser t
 
 \textit{OBS:note ainda que as transições intermediárias, ocorrem no meio da transição, são garantidas por esse esquema, mas a que ocorrem no final não}
 \\
-
+\\\\
 \includegraphics[width=0.6\textwidth]{../assets/bifasel.png}\cite{dc}
+\\\\
 \\\\
 no caso o esquema acima se chama \textit{Manchester ou bifase-L}
 
